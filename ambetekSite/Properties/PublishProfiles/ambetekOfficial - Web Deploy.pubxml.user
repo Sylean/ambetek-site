@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALQQI6GyAj0+dlKGzXDEOzQAAAAACAAAAAAAQZgAAAAEAACAAAACXKQgpozZMwQggrfTNo5iwocntkSYZ7XmBhJNZFANt8QAAAAAOgAAAAAIAACAAAACSN2t92wHzlZNOHxUxQ57vnlh6omzN1Vu3Vd53S0yBeYAAAACnXttGmShR5ICFLzc2GfaKm6h/90xHPKxQeMdt+PBJ66NvQHQLMg+sbxH33lVwl+FjidmX07d2iQ/UYy4dKqPKBMcX+x2EIYLxZbvyHyAX/5XZRHL89Unuzlh28z3XsrP6JBCGIYwnLB/FKZ+mnSOCyadL81I2liQ+xYq0k3EA/UAAAABUb5/FZBwA8MrQ3XtpVWyWCBF/6uXonC7vxTpxlfom4sT4oTmlgCzaeBGIY2q3sPQiaMm3fBqGhgrvIdvF9KU2</EncryptedPassword>
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="labTestContext">
+      <Value>Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ambetekSite.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~</Value>
+    </EFMigrations>
+    <EFMigrations Include="ambetekSite.Models.labTestContext">
+      <Value>Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

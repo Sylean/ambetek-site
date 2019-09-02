@@ -1,0 +1,22 @@
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.deps.json
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.runtimeconfig.json
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.runtimeconfig.dev.json
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.dll
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.pdb
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.csprojResolveAssemblyReference.cache
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.AssemblyInfo.cs
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.dll
+C:\Users\Anson C\Documents\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.pdb
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.deps.json
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.runtimeconfig.json
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.runtimeconfig.dev.json
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.dll
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\bin\Release\netcoreapp1.1\ambetekSite.pdb
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.csprojResolveAssemblyReference.cache
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.csproj.CoreCompileInputs.cache
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.AssemblyInfoInputs.cache
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.AssemblyInfo.cs
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.dll
+D:\Backup\Backup\MyDocuments\Visual Studio 2017\Projects\ambetekSite\ambetekSite\obj\Release\netcoreapp1.1\ambetekSite.pdb

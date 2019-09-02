@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="c:\users\anson c\documents\visual studio 2017\Projects\ambetekSite\ambetekSite\obj\Debug\netcoreapp1.1\PubTmp\Out\" />
+  <dbfullsql path="c:\users\anson c\documents\visual studio 2017\Projects\ambetekSite\ambetekSite\obj\Debug\netcoreapp1.1\PubTmp\EFSQLScripts\ambetekSite.Data.ApplicationDbContext.sql" />
+</sitemanifest>

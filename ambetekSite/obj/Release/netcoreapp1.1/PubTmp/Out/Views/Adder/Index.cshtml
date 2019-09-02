@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Adder Home";
+}
+
+<head>
+    <script>
+        var priceList = [];
+        var counter = 1;
+        function checkPrice(elementNumber) {
+            var returnValue;
+            var testCode = document.getElementsByName("labInputs")[elementNumber].value;
+            $.post("../labTestsDB/returnPrice/", { labCode: testCode }, function (data) {
+                returnValue = data;
+                priceList[elementNumber] = Number(data);
+                document.getElementsByName("labPrices")[elementNumber].innerText = "$" + CurrencyFormatted(returnValue);
+            });
+            $.post("../labTestsDB/returnDescription/", { labCode: testCode }, function (data) {
+                returnValue = data;
+                document.getElementsByName("labDescriptions")[elementNumber].innerText = returnValue;
+            });
+        }
+        function checkPriceOf(testCode) {
+            var returnValue;
+            $.post("../labTestsDB/returnPrice/", { labCode: testCode }, function (data) {
+                returnValue = data;
+                document.getElementsByName("labPrices")[0].innerText = returnValue;
+            });
+        }
+
+        function addNewField(divName) {
+            var newdiv = document.createElement('div');
+            newdiv.className = "row";
+            newdiv.divName = "dispose";
+            newdiv.innerHTML = '<div class="col-md-3" > <input type="text" name="labInputs" oninput="checkPrice(' + counter + ')" /></div> <div class="col-md-5"><p name="labDescriptions"></p></div> <div class="col-md-3"><p name="labPrices"></p></div><div class="col-md-1"><button onclick="checkPrice(' + counter + ')">✓</button></div>';
+            document.getElementById(divName).appendChild(newdiv);
+            counter++;
+        }
+/*        function reset() {
+            var elements = document.getElementsByName("dispose");
+            elements.forEach(function (element) {
+                alert(element.name);
+                element.parentNode.removeChild(element);
+            })
+        }
+  */      function CurrencyFormatted(amount) {
+            var i = parseFloat(amount);
+            if (isNaN(i)) { i = 0.00; }
+            var minus = '';
+            if (i < 0) { minus = '-'; }
+            i = Math.abs(i);
+            i = parseInt((i + .005) * 100);
+            i = i / 100;
+            s = new String(i);
+            if (s.indexOf('.') < 0) { s += '.00'; }
+            if (s.indexOf('.') == (s.length - 2)) { s += '0'; }
+            s = minus + s;
+            return s;
+        }
+        function finishPrice() {
+            var upperLimit = priceList.length;
+            var totalLabPrice = 5;
+//            alert(upperLimit);
+            for (var i = 0; i < upperLimit; i++) {
+//                alert(priceList[i]);
+                totalLabPrice += priceList[i];
+            }
+//            alert(totalLabPrice);
+            document.getElementById("totalPrice").innerText = "$" + CurrencyFormatted(totalLabPrice) + " (includes $5.00 IV fee)";
+
+        }
+   </script>
+
+</head>
+
+<br/>
+<div class="row">
+    <div class="clearfix"></div>
+    <div class="col-sm-12"><h2>AAHC Lab Adder</h2></div>
+</div>
+<div id="inputTable">
+    <div class="row">
+        <div class="col-md-3"><input type="text" name="labInputs" oninput="checkPrice(0)"/></div>
+        <div class="col-md-5"><p name="labDescriptions"></p></div>
+        <div class="col-md-3"><p name="labPrices"></p></div>
+        <div class="col-md-1"><button onclick="checkPrice(0)">✓</button></div>
+    </div>
+</div> 
+<div class="row">
+    <div class="col-md-1"><button onclick="addNewField('inputTable')">+</button></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-2" align="right"><button onclick="finishPrice()">Price Check</button></div>
+    <div class="col-md-1" align="right"><p>Total:</p></div>
+    <!-- Temporarily Disabled
+    <div class="col-md-1"><button onclick="reset">Reset</button></div>
+    -->
+    <div class="col-md-4" id="totalPriceBackground"><span id="totalPrice"></span></div>
+</div>

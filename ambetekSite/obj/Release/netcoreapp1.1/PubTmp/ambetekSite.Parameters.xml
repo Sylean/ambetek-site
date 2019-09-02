@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ambetekOfficial" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Anson\ C\\documents\\visual\ studio\ 2017\\Projects\\ambetekSite\\ambetekSite\\obj\\Release\\netcoreapp1\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="ambetekSite.Data.ApplicationDbContext" description="" value="Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Anson\ C\\documents\\visual\ studio\ 2017\\Projects\\ambetekSite\\ambetekSite\\obj\\Release\\netcoreapp1\.1\\PubTmp\\EFSQLScripts\\ambetekSite\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+  <parameter name="ambetekSite.Models.labTestContext" description="" value="Data Source=tcp:ambetekdb.database.windows.net,1433;Initial Catalog=ambetekOfficial_db;User Id=Sylean@ambetekdb;Password=ContinuationOfADream~" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Anson\ C\\documents\\visual\ studio\ 2017\\Projects\\ambetekSite\\ambetekSite\\obj\\Release\\netcoreapp1\.1\\PubTmp\\EFSQLScripts\\ambetekSite\.Models\.labTestContext\.sql$" />
+  </parameter>
+</parameters>
